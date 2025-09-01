@@ -1,0 +1,34 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ACEest Fitness</title>
+  </head>
+  <body>
+    <h1>ACEest Fitness — Log a workout</h1>
+
+    <form method="post">
+      <label>Workout: <input name="workout" /></label>
+      <label>Duration (minutes): <input name="duration" /></label>
+      <button type="submit">Add Workout</button>
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+          {% for m in messages %}<li>{{ m }}</li>{% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <h2>Logged Workouts</h2>
+    <ul>
+      {% for w in workouts %}
+        <li>{{ w.workout }} — {{ w.duration }} minutes</li>
+      {% else %}
+        <li>No workouts yet.</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
