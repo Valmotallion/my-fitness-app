@@ -51,3 +51,7 @@ pytest
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 python app.py
+
+##Run with Docker
+docker build -t my-fitness-app .
+docker run --rm -p 5000:5000 my-fitness-app
