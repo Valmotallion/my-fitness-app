@@ -1,5 +1,12 @@
 # ACEestFitness and Gym Application
 
+### Student Details
+* **Name:** Aniruddha Mitra
+* **Student ID:** 2024TM93066
+* **Program Code:** TM93 MTECH
+* **Email:** 2024TM93066@WILP.BITS-PILANI@AC.IN
+* **Phone:** 9330913599
+
 This is a Flask web application developed as part of a DevOps assignment to demonstrate proficiency in version control, containerization, and CI/CD pipelines.
 
 ## Project Overview
@@ -35,14 +42,12 @@ To run this application on your local machine, follow these steps:
 
 ## Local Testing
 
-To run the unit tests locally using Pytest, ensure  all  dependencies are installed and then execute:
+To run the unit tests locally using Pytest, ensure all dependencies are installed and then execute:
 
 ```bash
 pytest
 
-
-## Run locally
-```bash
+##Run locally
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 python app.py
