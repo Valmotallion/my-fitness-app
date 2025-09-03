@@ -12,8 +12,8 @@ To run this application on your local machine, follow these steps:
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/](https://github.com/)<YOUR-USERNAME>/<YOUR-REPOSITORY-NAME>.git
-    cd <YOUR-REPOSITORY-NAME>
+    git clone https://github.com/Valmotallion/my-fitness-app
+    cd my-fitness-app
     ```
 
 2.  Create and activate a virtual environment:
@@ -39,3 +39,7 @@ To run the unit tests locally using Pytest, ensure all dependencies are installe
 
 ```bash
 pytest
+
+## Docker 
+
+docker run --rm -p 5000:5000 my-fitness-app 
