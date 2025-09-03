@@ -16,7 +16,7 @@ The application provides basic fitness tracking functionalities, allowing users 
 - ✅ Integrated   pytest   tests  
 - 📦 Ready for   CI/CD   using GitHub Actions  
 
-
+ 
 ## 📂 Project Structure
 
 my-fitness-app/
